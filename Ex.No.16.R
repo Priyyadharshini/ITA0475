@@ -1,0 +1,17 @@
+matrix_5x4 <- matrix(1:20, nrow = 5, ncol = 4, byrow = TRUE)
+print("5 x 4 matrix filled by rows:")
+print(matrix_5x4)
+
+labels_3x3 <- c("a", "b", "c", "d", "e", "f", "g", "h", "i")
+matrix_3x3 <- matrix(labels_3x3, nrow = 3, ncol = 3, byrow = TRUE)
+rownames(matrix_3x3) <- c("Row1", "Row2", "Row3")
+colnames(matrix_3x3) <- c("Col1", "Col2", "Col3")
+print("3 x 3 matrix with labels filled by rows:")
+print(matrix_3x3)
+
+labels_2x2 <- c("A", "B", "C", "D")
+matrix_2x2 <- matrix(labels_2x2, nrow = 2, ncol = 2, byrow = FALSE)
+rownames(matrix_2x2) <- c("R1", "R2")
+colnames(matrix_2x2) <- c("C1", "C2")
+print("2 x 2 matrix with labels filled by columns:")
+print(matrix_2x2)
